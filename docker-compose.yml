@@ -11,6 +11,8 @@ services:
       - 25565:25565
     volumes:
       - ./world:/server/world:rw
+      - ./ops.json:/server/ops.json:rw
+      - ./server.properties:/server/server.properties:rw
     command:
       - java
       - -Xmx1024M
