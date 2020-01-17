@@ -10,6 +10,7 @@ services:
     ports:
       - 25565:25565
     volumes:
+      - ./eula.txt:/minecraft/eula.txt:ro
       - ./ops.json:/minecraft/ops.json:rw
       - ./server.properties:/minecraft/server.properties:rw
       - ./world:/minecraft/world:rw
