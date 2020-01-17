@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk
 
-WORKDIR /server
+WORKDIR /minecraft
 
 ARG VERSION
 

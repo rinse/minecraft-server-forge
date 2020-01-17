@@ -10,9 +10,9 @@ services:
     ports:
       - 25565:25565
     volumes:
-      - ./world:/server/world:rw
-      - ./ops.json:/server/ops.json:rw
-      - ./server.properties:/server/server.properties:rw
+      - ./ops.json:/minecraft/ops.json:rw
+      - ./server.properties:/minecraft/server.properties:rw
+      - ./world:/minecraft/world:rw
     command:
       - java
       - -Xmx1024M
