@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   minecraft-server-forge:
-    image: minecraft-server-forge:1.14.4
+    image: minecraft-server-forge:1.14.4-alpine
     build:
       context: .
       args:
