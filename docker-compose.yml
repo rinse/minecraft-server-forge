@@ -2,11 +2,11 @@ version: "3.7"
 
 services:
   minecraft-server-forge:
-    image: minecraft-server-forge:1.14.4-alpine
+    image: minecraft-server-forge:1.16.1-alpine
     build:
       context: .
       args:
-        VERSION: 1.14.4-28.1.0
+        VERSION: 1.16.1-32.0.108
     ports:
       - 25565:25565
       - 25575:25575
