@@ -14,4 +14,5 @@ services:
       - ./eula.txt:/minecraft/eula.txt:ro
       - ./ops.json:/minecraft/ops.json:rw
       - ./server.properties:/minecraft/server.properties:rw
+      - ./mods:/minecraft/mods:rw
       - ./world:/minecraft/world:rw
