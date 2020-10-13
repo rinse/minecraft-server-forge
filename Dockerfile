@@ -22,4 +22,4 @@ COPY --from=builder /minecraft /minecraft
 EXPOSE 25565
 EXPOSE 25575
 
-CMD [ "java", "-Xmx1024M", "-Xms1024M", "-jar", "forge.jar", "nogui" ]
+CMD [ "java", "-Xmx8192M", "-Xms8192M", "-jar", "forge.jar", "nogui" ]
