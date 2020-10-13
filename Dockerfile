@@ -20,5 +20,6 @@ WORKDIR /minecraft
 COPY --from=builder /minecraft /minecraft
 
 EXPOSE 25565
+EXPOSE 25575
 
 CMD [ "java", "-Xmx1024M", "-Xms1024M", "-jar", "forge.jar", "nogui" ]
