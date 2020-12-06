@@ -16,3 +16,5 @@ services:
       - ./server.properties:/minecraft/server.properties:rw
       - ./mods:/minecraft/mods:rw
       - ./world:/minecraft/world:rw
+      - ./whitelist.json:/minecraft/whitelist.json:rw
+    restart: always
